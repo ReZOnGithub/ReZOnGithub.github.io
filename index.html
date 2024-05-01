@@ -120,5 +120,11 @@
             y: e.clientY - cursor.offsetHeight / 4,
         })
     }
+    document.getElementById('playMusicLink').addEventListener('click', function(event) {
+  event.preventDefault(); // Prevent the default behavior of the link
+  var musicPlayer = document.getElementById('musicPlayer');
+  var musicUrl = "https://www.youtube.com/watch?v=v3xg3lODNfE"; // Replace with your music link
+  musicPlayer.src = musicUrl;
+  musicPlayer.play();
 </script>
 </html>
